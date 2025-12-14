@@ -27,10 +27,10 @@ def dda_line_draw(x1,y1,x2,y2):
 
 
 def main():
-    x1=int(input("Enter x1:"))
-    y1=int(input("Enter y1:"))
-    x2=int(input("Enter x2:"))
-    y2=int(input("Enter y2:"))
+    # x1=int(input("Enter x1:"))
+    # y1=int(input("Enter y1:"))
+    # x2=int(input("Enter x2:"))
+    # y2=int(input("Enter y2:"))
     while True:
         for event in pygame.event.get():
             if event.type==pygame.QUIT: 
@@ -38,7 +38,18 @@ def main():
                 sys.exit()
         screen.fill(BLACK)
         
-        dda_line_draw(x1,y1,x2,y2)
+        dda_line_draw(100,50,150,100)
+        dda_line_draw(100,50,50,100)
+        dda_line_draw(50,100,150,100)
+
+        dda_line_draw(50,100,50,200)
+        dda_line_draw(150,100,150,200)
+        dda_line_draw(50,200,150,200)
+        
+        dda_line_draw(75,150,75,200)
+        dda_line_draw(125,150,125,200)        
+        dda_line_draw(75,150,125,150)        
+
         pygame.display.flip()
         
 if __name__=="__main__":
